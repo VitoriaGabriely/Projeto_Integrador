@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@200;300 & display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #CDE4B1;
+    display: grid;
+    grid-template-rows: auto auto auto 90em 10em;
+}
+
+
+/*inicio estilização de Menu*/
+
+
+.cabecalho{
+    background-color: #334E11;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    margin: 1em;
+    
+}
+
+.nav-list{
+    flex-direction: row;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    gap: 1em
+}
+
+.nav-item{
+    margin-right: 1em;
+    margin-right: 1em;
+   
+}
+
+.nav-link{
+    text-decoration: none; 
+    color: #fff;
+    margin-right: 1em;
+    
+   
+}
+
+/*inicio estilização de Menu*/
+
+/*inicio estilização do contéudo */
+
+.animal > h2, .vegetal > h2{
+    margin: 10px;
+    margin-bottom: 20px;
+    color:red;
+}
+.animal, .vegetal{
+    display: flex;
+    justify-content:space-between ;
+    margin: 10px;
+}
+.texto_animal > p, .texto_vegetal > p{
+    font-size: 28px;
+    
+
+}
+
+.texto_animal, .texto_vegetal{
+    text-align: justify; 
+    width: 900px;
+    margin: 30px;
+    
+
+}
+
+
+
+
+.Border{
+    border: 1px solid red;
+}
+
+.animal > img, .vegetal > img{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+/*fim estilização do contéudo*/
+
+/*inicio estilização da area do vídeo*/
+
+.chamado{
+    width: 100%;
+    height: 60px;
+    background-color: #78A890;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chamado > p{
+    font-size: 30px;
+}
+
+.areavideo{
+    background-color: #FFF8E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.areavideo > p{
+    font-size: 20px;
+
+}
+
+.areavideo > video{
+    border: 1px solid black;
+    width: 800px;
+}
+
+/*fim estilização da área do vídeo*/
+
+/*inicio da estilização do quiz*/
+
+.QUIZ{
+    box-sizing: border-box;
+    background-color: #FFF8E4;
+
+}
+
+.tituloquiz{
+    font-size: 36px;
+    text-align: center;
+}
+.quiz_container{
+    max-height: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.quiz_container > section{
+    border: 2px solid #000000;
+    background-color: #78A890;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.quiz_container > section > label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+.quiz_container > section > label:hover{
+    background: #cec0fc;
+}
+
+.quiz_container > button{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #78A890;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.quiz_container > button:hover{
+    background: #000;
+    color:#fff
+}
+
+.quiz_container > h2{
+    text-align: center;
+}
+
+#resultado{
+    font-size: 30px;
+    color: green;
+}
+
+/*fim da estilização do quiz*/
+
+
+/*inicio da estilização do rodapé*/
+
+footer{
+    width: 100%;
+    position: absolute;
+    margin-top: 3600px;
+    background-color: #334E11;
+    color: white;
+    height: 200px;
+    margin-bottom: -10px;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.footer_content{
+    display: flex;
+    padding: 33px;
+    text-align: center;
+    
+}
+
+/*inicio da estilização do rodapé*/
+
+@media (max-width: 1000px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .cabecalho{
+        width: 500px;
+        height: 70px;
+    }
+
+    .logo{
+        margin-top: -20px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .conteudo{
+        height: 1600px;
+        
+    }
+
+    .texto_animal, .texto_vegetal{
+        width: 400px;
+    }
+
+    
+
+    .texto_animal > p, .texto_vegetal > p{
+        font-size: 20px;
+    }
+
+    .animal, .vegetal{
+        flex-direction: column;
+        
+    }
+
+    .animal > img, .vegetal > img{
+        flex-direction: column;
+        margin-left: 76px;
+
+    }
+
+
+    .chamado > p{
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    .areavideo > p{
+        font-size: 16px;
+        width: 400px;
+    }
+
+    .areavideo{
+        padding-bottom: 30px;
+    }
+
+    .areavideo > video{
+        width: 400px;
+    }
+
+    .QUIZ{
+        width: 500px;
+        height: 1700px;
+    }
+
+    footer{
+        width: 490px;
+        height: 170px;
+    }
+
+    .projeto > h3 > a{
+        color:#000;
+    }
+
+
+
+
+}
+
+
+
